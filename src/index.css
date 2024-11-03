@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.info-container {
+  justify-content: space-between
+}
+
+.nav-side {
+  display: 'block';
+}
+
+.side-menu-names {
+  margin-bottom: 10px;
+}
+
+.side-menu-names a {
+  text-decoration: none;
+}
+
+.nav-side a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-side a:hover {
+  transform: translateX(5px); /* Slight shift to the right */
+}
+
+.nav-side a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2.5px;
+  background-color: #cc00ff;
+  transition: width 0.3s ease;
+}
+
+.nav-side a:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+.hijacking li {
+  margin: 10px 0; /* Add spacing between list items */
+}
+
+.hijacking a {
+  color: black; /* Normal link color */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background */
+  padding: 2px 4px; /* Add some padding for better appearance */
+}
+
+.hijacking a:hover {
+  color: white; /* Change text color on hover */
+  background-color: #6F3A78; /* Highlight background color on hover */
+  text-decoration: none; /* Keep underline off on hover */
+}
+
+
+.info {
+  justify-content: space-between
+}
+
+.four-dns-servers li {
+  margin-bottom: 10px;
+}
+
+.dns-steps li {
+  margin-bottom: 10px;
+}
+
+.bullet-point-gap li {
+  margin-bottom: 10px;
+}
+
+.attacking-steps li {
+  margin-bottom: 10px;
+}
+
+.example-steps li {
+  margin-bottom: 10px;
+}
+
+.prevention-steps li {
+  margin-bottom: 10px;
+}
+
+.detecting-steps li {
+  margin-bottom: 10px;
+}
+
+/* On smaller screens, allow the navbar to take up full width */
+@media (max-width: 992px) { /* Adjust the breakpoint if necessary */
+  .nav-container {
+      max-width: 100%;
+      margin-left: 0px;
+  }
+
+  .info-container {
+    justify-content: center
+  }
+
+  .nav-side {
+      display: none;
+  }
+
+  .info {
+    justify-content: center
+  }
+}
+

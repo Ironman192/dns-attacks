@@ -1,0 +1,84 @@
+.secondaryNav {
+    /* background-color: #efebeb; */
+    padding: 10px 10px 0px 10px;
+    border-bottom: 1px solid #505050;
+}
+
+.nav-container {
+    max-width: 992px;
+    margin-left: 160px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* padding: 10px 15px; */
+    transition: background-color 0.3s;
+}
+
+.hover-dropdown {
+    height: 100%;
+}
+
+.hover-dropdown:hover .dropdown-menu,
+.hover-dropdown .dropdown-menu:hover {
+    display: block;
+}
+
+    .dropdown-menu {
+    display: none;
+    position: absolute; 
+    z-index: 1000; 
+    } 
+
+.nav-item {
+    display: inline-block; /* Make it behave like a block for padding/margins */
+    position: relative; /* Positioning for the underline effect */
+    padding: 10px 10px 15px 10px; /* Add padding for better spacing */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+    height: 100%;
+    margin-right: 20px;
+}
+
+.nav-item::after {
+    content: ''; /* Create a pseudo-element for the underline */
+    display: block; /* Make it a block element */
+    height: 3px; /* Thickness of the underline */
+    background: transparent; /* Start transparent */
+    position: absolute; /* Positioning under the text */
+    left: 0;
+    right: 0;
+    bottom: 0; /* Position at the bottom */
+    transition: background 0.3s ease; /* Smooth transition for the underline */
+}
+
+.nav-item:hover::after,
+.nav-item.selected::after { /* Use .selected for active state */
+    background: rgb(132, 0, 255); /* Change to a color on hover or selected */
+}
+
+.hover-dropdown:hover .dropdown-menu,
+.hover-dropdown .dropdown-menu:hover {
+    display: block;
+}
+
+    .dropdown:hover >,
+.dropend:hover > {
+  display: block;
+  margin-top: -0.125em;
+}
+
+/* On smaller screens, allow the navbar to take up full width */
+@media (max-width: 992px) { /* Adjust the breakpoint if necessary */
+    .nav-container {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+}
+
+#basic-nav-dropdown {
+    padding: 0px;
+}
+
+
