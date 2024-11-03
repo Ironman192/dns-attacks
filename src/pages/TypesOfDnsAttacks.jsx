@@ -98,22 +98,22 @@ function TypesOfDnsAttacks () {
               <br /><br /> 
               <p>In this course, we will look at three of the most common types of DNS attacks, which are:</p>
               <ul className='bullet-point-gap hijacking'>
-              <li>
-                <Link to="/types-of-dns-attacks/dns-spoofing-arp">
-                  DNS Spoofing
-                </Link>
-              </li>
-              <li>
-                <Link to="/types-of-dns-attacks/dns-hijacking">
-                  DNS Hijacking
-                </Link>
-              </li>
-              <li>
-                <Link to="/types-of-dns-attacks/dns-tunneling">
-                  DNS Tunneling
-                </Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/types-of-dns-attacks/dns-spoofing-arp">
+                    DNS Spoofing
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/types-of-dns-attacks/dns-hijacking">
+                    DNS Hijacking
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/types-of-dns-attacks/dns-tunneling">
+                    DNS Tunneling
+                  </Link>
+                </li>
+              </ul>
               <div className="note" style={{
                 marginTop: '30px',
                 marginBottom: '25px',

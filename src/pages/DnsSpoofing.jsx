@@ -124,9 +124,17 @@ function DnsSpoofing () {
               a malicious IP address. As a result, the user is unknowingly redirected to a fraudulent site.
               <br /><br /> 
               <p>To carry out a MitM DNS spoofing attack, there are a few different techniques. In this course, we will look at two types of DNS spoofing attacks. They are:</p>
-              <ul className='bullet-point-gap'>
-                <li>ARP Spoofing</li>
-                <li>Cache Poisoning</li>
+              <ul className='bullet-point-gap hijacking'>
+                <li>
+                  <a href="#arp">
+                    ARP Spoofing
+                  </a>
+                </li>
+                <li>
+                  <Link to="/types-of-dns-attacks/dns-spoofing-cache">
+                    Cache Poisoning
+                  </Link>
+                </li>
               </ul>
               <br /><br /> 
               <h4 id="arp" className="section" style={{marginBottom: '20px'}}>ARP Spoofing</h4>

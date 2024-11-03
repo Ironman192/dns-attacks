@@ -102,7 +102,7 @@ const Intro = () => {
             <p>
               However, as foundational as DNS is to the smooth functioning of the internet, it’s also a prime target for attackers. 
               DNS attacks can disrupt businesses, steal sensitive data, and mislead users (like me and you) in ways that often go unnoticed 
-              until it's too late. Whether it's through, just to name a few, DNS hijacking, cache poisoning, or denial of service 
+              until it's too late. Whether it's through, just to name a few, DNS hijacking, cache poisoning, or tunneling
               (don’t worry, we will learn what all of these are later) these attacks exploit vulnerabilities in one of the internet’s most 
               trusted systems.
             </p>
